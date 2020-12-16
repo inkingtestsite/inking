@@ -4,6 +4,10 @@
 	border-bottom: 1px solid #ffffff2e;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+	color:#ffffffad;
+}
+
 .navbar-dark .navbar-brand {
 	color:#d39e00;
 }
@@ -30,9 +34,15 @@
 }
 .contact{
 	display:none;
-	color:#ffffff;
-	background-color: #bd2130;
 } 
+
+.bright{
+	color:#cacaca!important;
+}
+
+.fa-envelope-open-text{
+	padding-right:6px;
+}
 
 .nav-link:hover, .nav-link:focus{
 	background-color:#d39e00;
@@ -48,6 +58,10 @@
 
 .navbar-toggler:hover, .navbar-toggler:focus{
 	background-color:#d39e00;
+}
+
+.fixed-bottom{
+	border-top: 2px solid #ffffff2e;
 }
 
 main{
@@ -120,6 +134,14 @@ h2{
 	padding-bottom:3rem;
 	border-bottom: .3rem solid #740a14ba;
 	font-size: 1.1em;
+}
+
+.details img{
+	width: 15rem;
+    height: 15rem;
+    border: .2rem solid #d39e00c4;
+	margin:1.5rem auto;
+
 }
 
 h3{
@@ -196,8 +218,28 @@ h3{
 	background-color:#d39e00;
 }
 
+.fa-map-marker-alt, .fa-mobile-alt{
+	padding-left:10px;
+	color:#bd2130;
+	float:left;
+	text-align: center;
+}
+
+.fa-clock{
+	color:#bd2130;
+	float:left;
+	text-align: center;
+}
+
 .facebook{
 	padding:2rem 0;
+}
+
+.timeline{
+	width:320px!important; 
+	height:450px!important;
+	border:none!important;
+	overflow:hidden!important;
 }
 
 /*gallery*/
@@ -253,8 +295,8 @@ h3{
 	.carousel-item {
 	 	height: 25rem;
 	}
-	.carousel-item > img {
-		height: 15em;
+	.services {
+		height: 15rem!important;
 	}
 }
 
@@ -270,8 +312,8 @@ h3{
   		height: 30rem;
 	}
 
-	.carousel-item > img {
-		height: 20em;
+	.services {
+		height: 20rem!important;
 	}
 
 	.facebook, .twitter{
@@ -312,8 +354,8 @@ h3{
 	.carousel-item {
 	  height: 37rem;
 	}
-	.carousel-item > img {
-		height: 27em;
+	.services {
+		height: 27rem!important;
 	}
 
 	.right{
