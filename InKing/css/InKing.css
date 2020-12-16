@@ -50,6 +50,7 @@
 
 .footer {
 	color:#d39e00;
+	padding-left: 0;
 }
 
 .footer:hover, .footer:focus {
@@ -359,7 +360,7 @@ h3{
 	}
 
 	.right{
-		height: 2000px;
+		height: 2300px;
 	}
 	#image{
 		width:32%;
