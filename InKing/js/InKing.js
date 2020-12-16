@@ -11,7 +11,7 @@ function upDate(previewPic){
     document.getElementById('image').style.backgroundColor = "#ffffff00";
     document.getElementById('image').style.backgroundImage = "url('"+ previewPic.src +"')";
 
-    document.getElementById('image').innerHTML = "previewPic.alt";
+    document.getElementById('image').innerHTML = previewPic.alt;
   
   }
 
