@@ -22,3 +22,13 @@ function unDo(){
      document.getElementById('image').innerHTML = "Hover over, or tab to an image in the gallery to enlarge here.";  
 
   }
+function caption(){
+    $("input[title], select[title]").focus(function(event){
+    $(this).after("<button id=tooltip></div>");
+    var $title = $(this).attr('title');
+    $(this).next().append($title);
+    });
+    $("input[title], select[title]").blur(function(){
+    $('#tooltip').remove();
+    });
+}

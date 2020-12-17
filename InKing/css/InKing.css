@@ -1,7 +1,39 @@
 
 /*page and nav*/
+
+a[title]:focus:after, button[title]:focus:after  { 
+	content:attr(title);
+	font-size:12px;
+	line-height: 15px;
+    background-color: white;
+    color: grey;
+    padding:5px;
+    margin-top: 2em;
+    margin-left: -4em;
+    position: absolute;
+    max-width: 200px;
+    border:1px solid grey;
+	z-index:1;
+ }
+#tooltip {  
+    background-color: grey;
+    color: white;
+    padding:5px;
+    margin-top: 1.5em;
+    position: absolute;
+    max-width: 200px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	z-index:1;
+}
+
 .navbar{
 	border-bottom: 1px solid #ffffff2e;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #d39e00;
 }
 
 .navbar-dark .navbar-nav .nav-link{
