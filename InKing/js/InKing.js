@@ -8,18 +8,20 @@ function toggle(){
 }
 
 function upDate(previewPic){
-    document.getElementById('image').style.backgroundColor = "#ffffff00";
-    document.getElementById('image').style.backgroundImage = "url('"+ previewPic.src +"')";
-
-    document.getElementById('image').innerHTML = previewPic.alt;
+  document.getElementById('image').style.backgroundColor = "#ffffff00";
+  document.getElementById('image').style.backgroundImage = "url('"+ previewPic.src +"')";
+  document.getElementById('image').style.opacity = "1"
+  document.getElementById('image').style.transition = "opacity 1.0s linear 0s"
+  document.getElementById('image').innerHTML = previewPic.alt;
   
   }
 
 function unDo(){
-   document.getElementById('image').style.backgroundColor = "#ffffff00";
-     document.getElementById('image').style.backgroundImage = "url('')";
-     
-     document.getElementById('image').innerHTML = "Hover over, or tab to an image in the gallery to enlarge here.";  
+  document.getElementById('image').style.backgroundColor = "#ffffff00";
+  document.getElementById('image').style.backgroundImage = "url('')";
+  document.getElementById('image').style.opacity = ".5"
+  document.getElementById('image').style.transition = "opacity .5s linear 0s"
+  document.getElementById('image').innerHTML = "Hover over, or tab to an image in the gallery to enlarge here.";  
 
   }
 function caption(){
